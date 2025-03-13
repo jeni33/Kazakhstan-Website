@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kazakhstan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="images/logo.png" type="image/jpeg" sizes="100x100">
+</head>
+<body class="bg-gray-100">
+    
+<!-- Navbar -->
+<nav class="bg-gray-900 text-white fixed w-full z-50 h-16">
+    <div class="container mx-auto flex items-center justify-between px-4 py-2">
+        <!-- Brand -->
+        <a href="index.html" class="text-2xl font-bold">
+            Kaza<span class="text-cyan-400">khstan</span>
+        </a>
+
+        <!-- Mobile Menu Button -->
+        <button id="navbar-show-btn" class="text-white text-2xl md:hidden focus:outline-none">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Navigation Links (Hidden on Mobile) -->
+        <div id="navbar-collapse" class="fixed top-0 right-0 w-3/4 sm:w-1/2 h-screen bg-gray-900 transform translate-x-full transition-transform duration-300 ease-in-out md:relative md:w-auto md:h-auto md:bg-transparent md:translate-x-0 md:flex md:items-center">
+            
+            <!-- Close Button -->
+<button id="navbar-close-btn" class="absolute top-4 right-4 text-white text-2xl md:hidden">
+    <i class="fas fa-times"></i>
+</button>
+
+<!-- Navigation Links -->
+<ul class="flex flex-col md:flex-row md:items-center md:gap-6 text-lg font-semibold p-4 md:p-0">
+    <li><a href="index.html" class="hover:text-cyan-400 transition py-2 px-4 block">Home</a></li>
+    <li><a href="attractions.html" class="hover:text-cyan-400 transition py-2 px-4 block">Attractions</a></li>
+    <li><a href="guide.html" class="hover:text-cyan-400 transition py-2 px-4 block">Travel Guide</a></li>
+    <li><a href="about.html" class="hover:text-cyan-400 transition py-2 px-4 block">About</a></li>
+    <li><a href="contact.html" class="hover:text-cyan-400 transition py-2 px-4 block">Contact</a></li>
+</ul>
+
+        </div>
+    </div>
+</nav>
+<!-- End of Navbar -->
+
+<!-- Header -->
+<header class="relative flex items-center justify-center h-[80vh] bg-cover bg-center text-white" style="background-image: url('images/bg.png');">
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="relative text-center px-6">
+        <h1 class="text-4xl md:text-6xl font-extrabold">Welcome to Kazakhstan!</h1>
+        <p class="mt-4 text-lg md:text-xl max-w-2xl mx-auto">
+            Experience the breathtaking landscapes, rich culture, and delicious cuisine that make Kazakhstan a truly unforgettable destination.
+        </p>
+    </div>
+</header>
+<!-- End of Header -->
+
+<!-- Featured Section -->
+<section id="featured" class="py-10 bg-gray-100">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-8">
+            <span class="text-sm text-gray-500 uppercase">Know about some places before your travel</span>
+            <h2 class="text-3xl font-bold text-gray-800">Featured Places</h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Featured Item -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="images/almaty.jpg" alt="Almaty" class="w-full h-60 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold flex items-center gap-2">
+                        <i class="fas fa-map-marker-alt text-cyan-500"></i>
+                        Almaty
+                    </h3>
+                    <p class="text-gray-600 mt-2 text-justify">Vibrant former capital with bazaars, a cathedral, and mountain views.</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="images/astana.jpg" alt="Astana Nur-Sultan" class="w-full h-60 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold flex items-center gap-2">
+                        <i class="fas fa-map-marker-alt text-cyan-500"></i>
+                        Asnata Nur-Sultan
+                    </h3>
+                    <p class="text-gray-600 mt-2"> Modern capital showcasing futuristic architecture.</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="images/big almaty lake.jpg" alt="Big Almaty Lake" class="w-full h-60 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold flex items-center gap-2">
+                        <i class="fas fa-map-marker-alt text-cyan-500"></i>
+                        Big Almaty Lake
+                    </h3>
+                    <p class="text-gray-600 mt-2">Beautiful alpine lake in the mountains with clear water.</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="images/charyn canyon.jpg" alt="Charyn Canyon" class="w-full h-60 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold flex items-center gap-2">
+                        <i class="fas fa-map-marker-alt text-cyan-500"></i>
+                        Charyn Canyon
+                    </h3>
+                    <p class="text-gray-600 mt-2">Stunning canyon with colorful rock formations, like a "Grand Canyon."</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="images/lake kaindy.jpg" alt="Lake Kaindy" class="w-full h-60 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold flex items-center gap-2">
+                        <i class="fas fa-map-marker-alt text-cyan-500"></i>
+                        Lake Kaindy
+                    </h3>
+                    <p class="text-gray-600 mt-2">Surreal sunken forest with submerged trees in turquoise water.</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="images/tamgaly tas.jpg" alt="Tamgaly Tas" class="w-full h-60 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold flex items-center gap-2">
+                        <i class="fas fa-map-marker-alt text-cyan-500"></i>
+                        Tamgaly Tas
+                    </h3>
+                    <p class="text-gray-600 mt-2"> UNESCO site with ancient rock carvings.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End of Featured Section -->
+
+<!-- Services Section -->
+<section id="services" class="py-12 bg-gray-100">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-10">
+            <span class="text-sm text-gray-500 uppercase">Know about services that we offer</span>
+            <h2 class="text-3xl font-bold text-gray-800 mt-2">Our Services</h2>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Service Item -->
+            <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+                <span class="text-4xl text-cyan-500 mb-4 inline-block">
+                    <i class="fas fa-hotel"></i>
+                </span>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Hotel Accommodations</h3>
+                <p class="text-gray-600">Experience the comfort and elegance of our carefully curated hotels, designed to provide you with relaxation and unforgettable moments.</p>
+                <a href="#" class="inline-block mt-4 px-5 py-2 bg-cyan-500 text-white rounded-lg hover:bg-cyan-600 transition">Explore More</a>
+            </div>
+
+            <!-- Service Item -->
+            <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+                <span class="text-4xl text-cyan-500 mb-4 inline-block">
+                    <i class="fas fa-map-marked-alt"></i>
+                </span>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Travel Guide</h3>
+                <p class="text-gray-600">Discover the hidden gems of Siquijor with our knowledgeable guides who will lead you to the island's most breathtaking sights and attractions.</p>
+                <a href="#" class="inline-block mt-4 px-5 py-2 bg-cyan-500 text-white rounded-lg hover:bg-cyan-600 transition">Learn More</a>
+            </div>
+
+            <!-- Service Item -->
+            <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+                <span class="text-4xl text-cyan-500 mb-4 inline-block">
+                    <i class="fas fa-money-bill"></i>
+                </span>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Affordable Packages</h3>
+                <p class="text-gray-600">Enjoy your dream vacation without breaking the bank. We offer packages that combine luxury with affordability for all travelers.</p>
+                <a href="#" class="inline-block mt-4 px-5 py-2 bg-cyan-500 text-white rounded-lg hover:bg-cyan-600 transition">View Packages</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End of Services Section -->
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="py-12 bg-gray-100">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-10">
+            <span class="text-sm text-gray-500 uppercase">What our visitors say about us</span>
+            <h2 class="text-3xl font-bold text-gray-800 mt-2">Comments</h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Testimonial Item -->
+            <div class="bg-white shadow-lg rounded-lg p-6">
+                <p class="text-gray-600 italic">Kazakhstan's landscapes took my breath away! From the vast steppes to the stunning Charyn Canyon, every view was like a postcard. The hospitality of the locals made the experience even more special.</p>
+                <div class="flex items-center mt-6">
+                    <img src="images/profile1.jpg" alt="testimonial" class="w-14 h-14 rounded-full object-cover">
+                    <div class="ml-4">
+                        <h3 class="text-lg font-semibold text-gray-800">Kiefer Watson</h3>
+                        <p class="text-gray-500 text-sm">Trip to Charyn Canyon</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial Item -->
+            <div class="bg-white shadow-lg rounded-lg p-6">
+                <p class="text-gray-600 italic">Almaty was an absolute delight! The mix of modern city life and nearby mountain escapes like Shymbulak made it a perfect travel destination. And the food beshbarmak was amazing!</p>
+                <div class="flex items-center mt-6">
+                    <img src="images/profile2.jpg" alt="testimonial" class="w-14 h-14 rounded-full object-cover">
+                    <div class="ml-4">
+                        <h3 class="text-lg font-semibold text-gray-800">David Braselton</h3>
+                        <p class="text-gray-500 text-sm">Trip to Almaty</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial Item -->
+            <div class="bg-white shadow-lg rounded-lg p-6">
+                <p class="text-gray-600 italic">Exploring the ancient Silk Road cities of Kazakhstan was like stepping back in time. Turkistan’s Mausoleum of Khoja Ahmed Yasawi was breathtaking. Can’t wait to visit again!</p>
+                <div class="flex items-center mt-6">
+                    <img src="images/profile3.jpg" alt="testimonial" class="w-14 h-14 rounded-full object-cover">
+                    <div class="ml-4">
+                        <h3 class="text-lg font-semibold text-gray-800">Rabin Angeles</h3>
+                        <p class="text-gray-500 text-sm">Trip to Lake Kaindy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End of Testimonials Section -->
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-10">
+    <div class="container mx-auto px-6 grid md:grid-cols-4 gap-8 text-center md:text-left">
+        <!-- Brand & Description -->
+        <div>
+            <a href="index.html" class="text-3xl font-bold text-white">
+                Kaza<span class="text-cyan-400">khstan</span>
+            </a>
+            <p class="text-gray-400 mt-4">
+                Kazakhstan, the 'Land of the Great Steppe,' is known for its stunning landscapes, rich history, and vibrant culture."
+            </p>
+        </div>
+
+        <!-- Social Links -->
+        <div>
+            <h2 class="text-xl font-semibold text-white mb-4">Follow us on:</h2>
+            <ul class="flex justify-center md:justify-start space-x-8">
+                <li><a href="#" class="text-cyan-400 text-xl"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#" class="text-cyan-400 text-xl"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#" class="text-cyan-300 text-xl"><i class="fab fa-twitter"></i></i></a></li>
+                <li><a href="#" class="text-cyan-500 text-xl"><i class="fab fa-pinterest"></i></a></li>
+                <li><a href="#" class="text-cyan-400 text-xl"><i class="fab fa-google-plus"></i></a></li>
+            </ul>
+        </div>
+
+        <!-- Popular Places -->
+        <div>
+            <h2 class="text-xl font-semibold text-white mb-4">Popular Places:</h2>
+            <ul class="space-y-2">
+                <li><a href="#" class="text-gray-400 hover:text-cyan-400">Almaty</a></li>
+                <li><a href="#" class="text-gray-400 hover:text-cyan-400">Astana Nur-Sultan</a></li>
+                <li><a href="#" class="text-gray-400 hover:text-cyan-400">Big Almaty Lake </a></li>
+                <li><a href="#" class="text-gray-400 hover:text-cyan-400">Charyn Canyon</a></li>
+                <li><a href="#" class="text-gray-400 hover:text-cyan-400">Lake Kaindy</a></li>
+                <li><a href="#" class="text-gray-400 hover:text-cyan-400">Tamgaly tas</a></li>
+            </ul>
+        </div>
+
+        <!-- Subscribe Form -->
+        <div>
+            <h2 class="text-xl font-semibold text-white mb-4">Get Updates About Kazakhstan!</h2>
+            <form class="flex flex-col space-y-3">
+                <input type="email" placeholder="Enter Your Email" class="p-2 rounded-md border border-gray-700 bg-gray-800 text-white focus:outline-none focus:border-blue-400">
+                <input type="submit" value="Stay Updated" class="bg-cyan-500 text-white py-2 rounded-md cursor-pointer hover:bg-cyan-600">
+            </form>
+        </div>
+    </div>
+</footer>
+<!-- End of Footer -->
+
+<!-- JavaScript for Mobile Menu -->
+<script>
+    const navbarShowBtn = document.getElementById("navbar-show-btn");
+    const navbarCloseBtn = document.getElementById("navbar-close-btn");
+    const navbarCollapse = document.getElementById("navbar-collapse");
+
+    navbarShowBtn.addEventListener("click", () => {
+        navbarCollapse.classList.remove("translate-x-full"); // Show menu
+    });
+
+    navbarCloseBtn.addEventListener("click", () => {
+        navbarCollapse.classList.add("translate-x-full"); // Hide menu
+    });
+</script>
+</body>
+</html>
